@@ -16,18 +16,11 @@ public class Car {
     @Column(name = "name")
     private String name;
 
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String name, int series) {
         this.name = name;
-        this.series = series;
-    }
-
-    public int getSeries() {
-        return series;
-    }
-
-    public void setSeries(int series) {
         this.series = series;
     }
 
@@ -37,5 +30,13 @@ public class Car {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getSeries() {
+        return series;
+    }
+
+    public void setSeries(int series) {
+        this.series = series;
     }
 }
